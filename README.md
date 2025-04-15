@@ -52,3 +52,11 @@ export default tseslint.config({
   },
 })
 ```
+
+----------------------------------------------------------------------------------------------------------
+# DevTinder
+Create a vite+React application
+Remove all the unnecessary code and create a Hello Devtinder
+Install Tailwind css
+Intsall Daisy UI
+Add a Navigation bar for devTinder in App.tsx
