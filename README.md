@@ -61,3 +61,4 @@ Install Tailwind css
 Intsall Daisy UI
 Add a Navigation bar for devTinder in App.tsx
 Created a saperate component for Navbar in NavBar.tsx file.
+Installed React Router to DevTinder.
