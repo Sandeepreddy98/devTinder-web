@@ -75,5 +75,5 @@ export default tseslint.config({
  - You should able to access only the application only when the token is present.
  - if token is not present then redirect to '/login'.
  - Logout
- - Profile
+ - Build 1 user card on feed.
 

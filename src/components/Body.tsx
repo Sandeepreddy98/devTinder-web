@@ -13,7 +13,8 @@ function Body() {
   const user = useSelector((store : any) => store.user)
 
   const fetchUser = async () =>{
-    if(!user) return
+    if(window.location.pathname === '/login') return
+    if(user) return
     try{
       const res = await axios.get(SERVER_URI+"/profile/view",{withCredentials: true})
       dispatch(addUser(res.data.data))
