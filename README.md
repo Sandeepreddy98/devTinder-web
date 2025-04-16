@@ -65,3 +65,11 @@ Installed React Router to DevTinder.
 Create BrowserRouter > Routes > Route ='/' Body > Route children
 Create Outlet in body
 create footer
+Create Login page 
+Install CORS in backend and add configuration {origin :"",credetails:true}
+Install axios and make an API Call with {withCredentials:true}
+Install @reduxjs/toolkit & react-redux 
+configureStore => Provider => createSlice => addSlice to store
+Add redux devtools in chrome as extension
+Navbar should update as soon as user login to store => subscribe to store
+
