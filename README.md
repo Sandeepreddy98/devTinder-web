@@ -55,21 +55,21 @@ export default tseslint.config({
 
 ----------------------------------------------------------------------------------------------------------
 # DevTinder
- - Create a vite+React application
- - Remove all the unnecessary code and create a Hello Devtinder
- - Install Tailwind css
- - Intsall Daisy UI
- - Add a Navigation bar for devTinder in App.tsx
- - Created a saperate component for Navbar in NavBar.tsx file.
- - Installed React Router to DevTinder.
- - Create BrowserRouter > Routes > Route ='/' Body > Route children
- - Create Outlet in body
- - create footer
- - Create Login page 
- - Install CORS in backend and add configuration {origin :"",credetails:true}
- - Install axios and make an API Call with {withCredentials:true}
- - Install @reduxjs/toolkit & react-redux 
- - configureStore => Provider => createSlice => addSlice to store
- - Add redux devtools in chrome as extension
- - Navbar should update as soon as user login to store => subscribe to store
+-Create a vite+React application
+-Remove all the unnecessary code and create a Hello Devtinder
+-Install Tailwind css
+-Intsall Daisy UI
+-Add a Navigation bar for devTinder in App.tsx
+-Created a saperate component for Navbar in NavBar.tsx file.
+ -Installed React Router to DevTinder.
+ -Create BrowserRouter > Routes > Route ='/' Body > Route children
+ -Create Outlet in body
+ -create footer
+ -Create Login page 
+ -Install CORS in backend and add configuration {origin :"",credetails:true}
+ -Install axios and make an API Call with {withCredentials:true}
+ -Install @reduxjs/toolkit & react-redux 
+ -configureStore => Provider => createSlice => addSlice to store
+ -Add redux devtools in chrome as extension
+-Navbar should update as soon as user login to store => subscribe to store
 
