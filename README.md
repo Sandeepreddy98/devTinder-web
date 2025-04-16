@@ -73,5 +73,7 @@ export default tseslint.config({
  - Add redux devtools in chrome as extension
  - Navbar should update as soon as user login to store => subscribe to store
  - You should able to access only the application only when the token is present.
- - if token is not present then redirect to '/login'
+ - if token is not present then redirect to '/login'.
+ - Logout
+ - Profile
 

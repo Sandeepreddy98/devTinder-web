@@ -19,7 +19,7 @@ function Login() {
         { withCredentials: true }
       );
       dispatch(addUser(res.data.data));
-      navigate('/')
+      return navigate('/')
     } catch (err) {
       console.error(err);
     }

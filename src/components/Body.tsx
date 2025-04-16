@@ -19,7 +19,7 @@ function Body() {
       dispatch(addUser(res.data.data))
     }catch(err : any){
       if(err.status === 401){
-        navigate('/login')
+        return navigate('/login')
       }
       console.error(err)
     }
