@@ -76,4 +76,6 @@ export default tseslint.config({
  - if token is not present then redirect to '/login'.
  - Logout
  - Build 1 user card on feed.
+ - Edit profile feature.
+ - Connections page
 
