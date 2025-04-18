@@ -9,7 +9,7 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const login = async () => {
     try {
@@ -19,7 +19,7 @@ function Login() {
         { withCredentials: true }
       );
       dispatch(addUser(res.data.data));
-      return navigate('/')
+      return navigate("/");
     } catch (err) {
       console.error(err);
     }
@@ -39,7 +39,6 @@ function Login() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            {/* <p className="fieldset-label">Optional</p> */}
           </fieldset>
           <fieldset className="fieldset">
             <legend className="fieldset-legend">Password</legend>
@@ -50,7 +49,6 @@ function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            {/* <p className="fieldset-label">Optional</p> */}
           </fieldset>
           <div className="card-actions justify-center mt-4">
             <button className="btn btn-primary px-10" onClick={login}>

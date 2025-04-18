@@ -8,12 +8,12 @@ import { addUser } from "../utils/store/userSlice";
 function EditUser({ user }: any) {
   const { age, firstName, lastName, gender, photos, about } = user;
   const genders = ["male", "female", "others"];
-  const [updatedFirstName, setUpdatedFirstName] = useState(firstName);
-  const [updatedLastName, setUpdatedLastName] = useState(lastName);
-  const [updatedAge, setUpdatedAge] = useState(age);
-  const [updatedGender, setUpdatedGender] = useState(gender);
-  const [updatedPhotos, setUpdatedPhotos] = useState(photos);
-  const [updatedAbout, setUpdatedAbout] = useState(about);
+  const [updatedFirstName, setUpdatedFirstName] = useState(firstName || "");
+  const [updatedLastName, setUpdatedLastName] = useState(lastName || "");
+  const [updatedAge, setUpdatedAge] = useState(age || "");
+  const [updatedGender, setUpdatedGender] = useState(gender || "");
+  const [updatedPhotos, setUpdatedPhotos] = useState(photos || ['']);
+  const [updatedAbout, setUpdatedAbout] = useState(about || '');
   const dispatch = useDispatch()
 
   const updateProfile = async () => {
