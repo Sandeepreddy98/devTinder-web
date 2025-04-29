@@ -20,7 +20,7 @@ function Connections() {
 
   useEffect(() => {
     fetchConnections();
-  });
+  },[]);
 
   if (!connections) return;
   if (connections.length === 0) {
