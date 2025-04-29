@@ -78,4 +78,5 @@ export default tseslint.config({
  - Build 1 user card on feed.
  - Edit profile feature.
  - Connections page
+ - Build the UI for chat window on /chat/:targetUserId
 

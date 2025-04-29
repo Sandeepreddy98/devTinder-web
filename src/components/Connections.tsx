@@ -3,6 +3,7 @@ import { SERVER_URI } from "../utils/constants-env";
 import { useDispatch, useSelector } from "react-redux";
 import { addConnections } from "../utils/store/connectionSlice";
 import { useEffect } from "react";
+import { Link } from "react-router";
 
 function Connections() {
   const dispatch = useDispatch();
@@ -33,7 +34,7 @@ function Connections() {
     const { _id, age, firstName, lastName, gender, photos, about } = connection;
     return (
       <div
-        key={connection._id}
+        key={_id}
         className="card card-side bg-base-300 shadow-sm my-5 w-1/3 m-auto p-4 flex items-center"
       >
         <figure>
@@ -48,6 +49,9 @@ function Connections() {
           <p>{age && gender && age + " ," + gender}</p>
           <p>{about}</p>
         </div>
+        <Link to={"/chat/" + _id}>
+          <button className="btn btn-secondary">Chat</button>
+        </Link>
       </div>
     );
   });
